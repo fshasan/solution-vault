@@ -1,0 +1,1 @@
+select tweet_id from tweets group by content having length(content) > 15;
