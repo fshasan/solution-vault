@@ -1,2 +1,2 @@
-# leetcoding
+## leetcoding
 My solves from LeetCode
