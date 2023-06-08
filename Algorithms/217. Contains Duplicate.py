@@ -1,8 +1,14 @@
 class Solution(object):
     def containsDuplicate(self, nums):
-        num_set = set(nums)
+        dict = {}
+        for i in range(len(nums)):
+            if nums[i] in dict:
+                dict[nums[i]] += 1
+            else:
+                dict[nums[i]] = 1
 
-        if len(num_set) == len(nums):
-            return False
-        else:
-            return True
+        for key, value in dict.items():
+            if value > 1:
+                return True
+
+        return False
