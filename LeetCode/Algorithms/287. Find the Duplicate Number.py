@@ -10,7 +10,4 @@ class Solution(object):
                 
         for key, value in dict.items():
             if value > 1:
-                ans = key
-                break
-
-        return ans
+                return key
