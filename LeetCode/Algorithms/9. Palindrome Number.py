@@ -8,10 +8,5 @@ class Solution:
             mid = len(x) // 2
         for i in range(0, mid):
             if x[i] != x[len(x) - 1 - i]:
-                flag = 0
-                break
-        
-        if flag == 0:
-            return False
-        else:
-            return True
+                return False
+        return True

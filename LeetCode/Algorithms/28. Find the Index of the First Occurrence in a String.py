@@ -4,12 +4,7 @@ class Solution(object):
         i = 0
         while i < len(haystack):
             if needle == haystack[i : i + len(needle)]:
-                flag = 1
-                break
+                return i
             else:
                 i += 1
-
-        if flag == 1:
-            return i
-        else:
-            return -1
+        return -1

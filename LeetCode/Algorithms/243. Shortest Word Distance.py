@@ -5,6 +5,5 @@ class Solution(object):
 
         if s == t:
             return True
-        else:
-            return False
+        return False
             

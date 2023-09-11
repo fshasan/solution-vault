@@ -10,9 +10,4 @@ class Solution(object):
                 
         for key, value in freq.items():
             if value == 1:
-                f = 1
-                found = key
-                break
-                
-        if f == 1:
-            return found
+                return key
